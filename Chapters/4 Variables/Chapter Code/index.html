@@ -5,8 +5,49 @@
 </head>
 <body>
   <script>
+    // Defining a sring variable
     let welcomeMessage = 'Hello Friends';
     console.log(welcomeMessage);
+
+    // Defining a number variable
+    let bagPrice = (15599 - (10/100 * 15599)) - 272;
+    let jeansPrice = (2499 - (41/100*2499)) - 29;
+
+    let bagValue = Math.round((jeansPrice + bagPrice + 25 + 20) * 118/100);
+
+    // to embed variables, expressions, or mathematical calculations, use $ and ``
+    let bagSummary = `Your final Myntra Bag amount is ₹${bagValue}`;
+    console.log(bagSummary);
+
+    let a = 5;
+    let b = 6;
+    let c = a + 4;
+    console.log(c);
+    c = b + 2;
+    console.log(c);
+    
+    // Shorthand Assignment Operators
+    let i = 1;
+    // i = i + 5
+    i += 5;
+    console.log(i);
+
+    // i = i - 5
+    i -= 2;
+    console.log(i);
+
+    // i = i * 3
+    i *= 3;
+    console.log(i);
+
+    // i = i / 4
+    i /= 4;
+    console.log(i);
+
+    // i = i + 1
+    i ++;
+    console.log(i);
+
   </script>
 </body>
 </html>

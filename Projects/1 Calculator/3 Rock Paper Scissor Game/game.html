@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RPS Game</title>
+  <style>
+    body {text-align: center;}
+  </style>
+</head>
+<body>
+  <h1>Rock Paper Scissor Game</h1>
+  <button onclick="
+  // This will generate random number between 0-3
+  let randomNumber = Math.random() * 3;
+  let computerChoice;
+  if (randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Rock';
+  } else if(randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = 'Paper';
+  } else{
+    computerChoice = 'Scissor';
+  }
+
+  let resultMsg;
+  if (computerChoice === 'Scissor') {
+    resultMsg = 'You have WON!.';
+  } else if(computerChoice === 'Rock') {
+    resultMsg = `It's a tie.`;
+  } else if(computerChoice==='Paper') {
+    resultMsg = 'Computer has won.';
+  }
+
+  alert(`You've chosen Rock. Computer choice is ${computerChoice}. ${resultMsg}`);
+
+  ">Rock</button>
+
+  <button onclick="
+  // This will generate random number between 0-3
+  randomNumber = Math.random() * 3;
+  if (randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Rock';
+  } else if(randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = 'Paper';
+  } else{
+    computerChoice = 'Scissor';
+  }
+
+  if (computerChoice === 'Rock') {
+    resultMsg = 'You have WON!.';
+  } else if(computerChoice === 'Paper') {
+    resultMsg = `It's a tie.`;
+  } else if(computerChoice==='Scissor') {
+    resultMsg = 'Computer has won.';
+  }
+
+  alert(`You've chosen Paper. Computer choice is ${computerChoice} and ${resultMsg}`);
+
+  ">Paper</button>
+
+  <button onclick="
+  // This will generate random number between 0-3
+  randomNumber = Math.random() * 3;
+  if (randomNumber > 0 && randomNumber <= 1){
+    computerChoice = 'Rock';
+  } else if(randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = 'Paper';
+  } else{
+    computerChoice = 'Scissor';
+  }
+
+  if (computerChoice === 'Paper') {
+    resultMsg = 'You have WON!.';
+  } else if(computerChoice === 'Scissor') {
+    resultMsg = `It's a tie.`;
+  } else if(computerChoice==='Rock') {
+    resultMsg = 'Computer has won.';
+  }
+
+  alert(`You've chosen Scissor. Computer choice is ${computerChoice} and ${resultMsg}`);
+
+  ">Scissor</button>
+</body>
+</html>
